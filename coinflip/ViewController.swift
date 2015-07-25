@@ -31,6 +31,8 @@ class ViewController: UIViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
       // Do any additional setup after loading the view, typically from a nib.
+      
+      //this makes the image a pattern instead of a flat image.
       self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!);
    }
 
