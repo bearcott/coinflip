@@ -13,6 +13,8 @@
 		094B04891B62EFA9004DF622 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094B04881B62EFA9004DF622 /* Images.xcassets */; };
 		094B048C1B62EFA9004DF622 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094B048A1B62EFA9004DF622 /* LaunchScreen.xib */; };
 		094B04981B62EFA9004DF622 /* coinflipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094B04971B62EFA9004DF622 /* coinflipTests.swift */; };
+		0954B8A71B631492006FECCF /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0954B8A61B631492006FECCF /* coin.png */; };
+		0954B8A91B631AD5006FECCF /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0954B8A81B631AD5006FECCF /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		094B04911B62EFA9004DF622 /* coinflipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coinflipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		094B04961B62EFA9004DF622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		094B04971B62EFA9004DF622 /* coinflipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coinflipTests.swift; sourceTree = "<group>"; };
+		0954B8A61B631492006FECCF /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin.png; path = ../../coin.png; sourceTree = "<group>"; };
+		0954B8A81B631AD5006FECCF /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				094B04831B62EFA9004DF622 /* ViewController.swift */,
 				094B04851B62EFA9004DF622 /* Main.storyboard */,
 				094B04881B62EFA9004DF622 /* Images.xcassets */,
+				0954B8A81B631AD5006FECCF /* background.png */,
+				0954B8A61B631492006FECCF /* coin.png */,
 				094B048A1B62EFA9004DF622 /* LaunchScreen.xib */,
 				094B047F1B62EFA9004DF622 /* Supporting Files */,
 			);
@@ -192,6 +198,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0954B8A71B631492006FECCF /* coin.png in Resources */,
+				0954B8A91B631AD5006FECCF /* background.png in Resources */,
 				094B04871B62EFA9004DF622 /* Main.storyboard in Resources */,
 				094B048C1B62EFA9004DF622 /* LaunchScreen.xib in Resources */,
 				094B04891B62EFA9004DF622 /* Images.xcassets in Resources */,
@@ -407,6 +415,7 @@
 				094B049D1B62EFA9004DF622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		094B049E1B62EFA9004DF622 /* Build configuration list for PBXNativeTarget "coinflipTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +424,7 @@
 				094B04A01B62EFA9004DF622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

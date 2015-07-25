@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14F6a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,11 +16,89 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L04-yE-bBD">
+                                <rect key="frame" x="178" y="178" width="244" height="244"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="cpi-bB-ZMx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="orc-UJ-M3l"/>
+                                    <constraint firstAttribute="width" constant="250" id="uDd-Mv-aQ4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="xdr-Vs-IWx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" backgroundImage="coin.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="orc-UJ-M3l"/>
+                                        <exclude reference="xdr-Vs-IWx"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="coin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LD0-74-EBE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXD-ed-2dc">
+                                <rect key="frame" x="273" y="94" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Flip it now." textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="073-sJ-O2n">
+                                <rect key="frame" x="4" y="0.0" width="592" height="209.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209.5" id="2C1-vH-TVn"/>
+                                    <constraint firstAttribute="height" constant="200" id="7cL-x9-yOd"/>
+                                    <constraint firstAttribute="width" secondItem="073-sJ-O2n" secondAttribute="height" multiplier="147:52" id="j85-ri-o2G"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="xOK-FC-sfD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2C1-vH-TVn"/>
+                                        <exclude reference="j85-ri-o2G"/>
+                                        <exclude reference="xOK-FC-sfD"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="-20" y="85" width="441" height="43"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="073-sJ-O2n" secondAttribute="centerY" id="C3W-zz-ssA"/>
+                            <constraint firstAttribute="centerY" secondItem="073-sJ-O2n" secondAttribute="centerY" constant="150" id="NgL-KE-R0m"/>
+                            <constraint firstAttribute="centerX" secondItem="073-sJ-O2n" secondAttribute="centerX" id="aDn-pr-4jb"/>
+                            <constraint firstAttribute="centerX" secondItem="073-sJ-O2n" secondAttribute="centerX" id="alr-eb-JMk"/>
+                            <constraint firstAttribute="centerX" secondItem="L04-yE-bBD" secondAttribute="centerX" id="nKM-vf-k77"/>
+                            <constraint firstAttribute="centerY" secondItem="L04-yE-bBD" secondAttribute="centerY" constant="-50" id="y74-Gz-vCz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="WXD-ed-2dc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="C3W-zz-ssA"/>
+                                <exclude reference="alr-eb-JMk"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="words" destination="073-sJ-O2n" id="7rC-jr-nwb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="636" y="58"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coin.png" width="499" height="500"/>
+    </resources>
 </document>
