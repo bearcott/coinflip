@@ -10,11 +10,11 @@
 		094B04821B62EFA9004DF622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094B04811B62EFA9004DF622 /* AppDelegate.swift */; };
 		094B04841B62EFA9004DF622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094B04831B62EFA9004DF622 /* ViewController.swift */; };
 		094B04871B62EFA9004DF622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094B04851B62EFA9004DF622 /* Main.storyboard */; };
-		094B04891B62EFA9004DF622 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094B04881B62EFA9004DF622 /* Images.xcassets */; };
 		094B048C1B62EFA9004DF622 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094B048A1B62EFA9004DF622 /* LaunchScreen.xib */; };
 		094B04981B62EFA9004DF622 /* coinflipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094B04971B62EFA9004DF622 /* coinflipTests.swift */; };
 		0954B8A71B631492006FECCF /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0954B8A61B631492006FECCF /* coin.png */; };
 		0954B8AB1B632189006FECCF /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0954B8AA1B632189006FECCF /* background.png */; };
+		0954B8AF1B632558006FECCF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0954B8AE1B632558006FECCF /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +33,13 @@
 		094B04811B62EFA9004DF622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		094B04831B62EFA9004DF622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		094B04861B62EFA9004DF622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		094B04881B62EFA9004DF622 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		094B048B1B62EFA9004DF622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		094B04911B62EFA9004DF622 /* coinflipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coinflipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		094B04961B62EFA9004DF622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		094B04971B62EFA9004DF622 /* coinflipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coinflipTests.swift; sourceTree = "<group>"; };
 		0954B8A61B631492006FECCF /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin.png; path = ../../coin.png; sourceTree = "<group>"; };
 		0954B8AA1B632189006FECCF /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../background.png; sourceTree = "<group>"; };
+		0954B8AE1B632558006FECCF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 				094B04811B62EFA9004DF622 /* AppDelegate.swift */,
 				094B04831B62EFA9004DF622 /* ViewController.swift */,
 				094B04851B62EFA9004DF622 /* Main.storyboard */,
-				094B04881B62EFA9004DF622 /* Images.xcassets */,
+				0954B8AE1B632558006FECCF /* Images.xcassets */,
 				0954B8AA1B632189006FECCF /* background.png */,
 				0954B8A61B631492006FECCF /* coin.png */,
 				094B048A1B62EFA9004DF622 /* LaunchScreen.xib */,
@@ -202,7 +202,7 @@
 				094B04871B62EFA9004DF622 /* Main.storyboard in Resources */,
 				094B048C1B62EFA9004DF622 /* LaunchScreen.xib in Resources */,
 				0954B8AB1B632189006FECCF /* background.png in Resources */,
-				094B04891B62EFA9004DF622 /* Images.xcassets in Resources */,
+				0954B8AF1B632558006FECCF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
